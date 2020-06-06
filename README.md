@@ -56,3 +56,10 @@ Your project should have a user profile that at least the following information:
 
      Rating/ Review
 Projects will be rated/reviewed based on the following criteria:
+
+##  API Endpoints
+    You should create an API so that users can access data from your application. You can create two API endpoints:
+
+Profile - This endpoint should return all the user profiles with information such as the username, bio, projects of the user and profile picture
+Projects- This endpoint should return information pertaining to all the projects posted in your application.
+
