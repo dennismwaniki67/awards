@@ -11,7 +11,10 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
 import os
-
+import django_heroku
+import dj_database_url
+from decouple import config,Csv
+import cloudinary
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -39,10 +42,32 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'awewards',
     'bootstrap3',
+    'cloudinary',
+    'rest_framework',
+    'rest_framework.authtoken',
+    'star_ratings',
+    'crispy_forms',
+    'tinymce',
 
 ]
+CRISPY_TEMPLATE_PACK = 'bootstrap3'
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.TokenAuthentication',
+    )
+}
+#Add app
+cloudinary.config(
+    cloud_name = 'dennism91',
+    api_key = '678261338366578',
+    api_secret = 'naxBxKzQAbHMyGBJOyd1hdjl7as',  
+)
+
+
 
 MIDDLEWARE = [
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -119,6 +144,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
@@ -128,3 +154,11 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
 )
 
+#configuring the location for media
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+#configure django app for heroku
+LOGIN_REDIRECT_URL = 'home'
+STAR_RATINGS_RANGE = 10
+django_heroku.settings(locals())
