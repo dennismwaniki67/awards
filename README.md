@@ -79,3 +79,9 @@ Projects- This endpoint should return information pertaining to all the projects
     source virtual/bin/activate
     install pip using curl
 
+## Deployment
+
+    Deploying the Django Apps to Heroku to view.
+
+
+
