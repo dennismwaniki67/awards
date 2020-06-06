@@ -12,4 +12,6 @@
     Use a serializer for consistency 
     JSON -> Serializer
     Validation -> Serialize
+
+## Purpose
     
