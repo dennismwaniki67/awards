@@ -40,3 +40,19 @@ As a user, you can:
     View projects overall score
     View my profile page.
     
+## System Features/Objectives
+     Projects
+Projects should have a Title, an image of the project's landing page, a detailed description of the project, a link to the live site.
+
+     Profile
+Your project should have a user profile that at least the following information:
+
+    Profile picture of the user.
+    User Bio
+    Projects the user has posted
+    A contact information of the user. 
+ An Authentication System 
+    Your application should have a solid authentication system that allows users to sign up or log in to the application before posting or rating a project.
+
+     Rating/ Review
+Projects will be rated/reviewed based on the following criteria:
