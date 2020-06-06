@@ -91,6 +91,23 @@ Projects- This endpoint should return information pertaining to all the projects
     postgresql - PostgreSQL is a powerful, open source object-relational database system with over 30 years of active development that has earned it a strong reputation for reliability, feature robustness, and performance.
     Versioning
     version 1.0.0
+## Bugs
+
+    If you encounter any bugs, email me on dennismwaniki67@gmail.com. If you would like to add some changes, please feel free to
+fork the project and make a pull request.
+
+## Authors
+
+DENNIS MWANIKI
+
+## License
+
+This project is licensed under the MIT License
+
+## Acknowledgments
+
+Moringa School
+
 
 
 
