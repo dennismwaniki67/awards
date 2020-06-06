@@ -63,3 +63,19 @@ Projects will be rated/reviewed based on the following criteria:
 Profile - This endpoint should return all the user profiles with information such as the username, bio, projects of the user and profile picture
 Projects- This endpoint should return information pertaining to all the projects posted in your application.
 
+# Getting Started.
+
+    These instructions will get you a copy of the project up and running on a local host.
+
+    Step 1: git clone
+    Step 2: Enter the Project root folder
+
+    cd gallery/
+    install virtual environment (venv) without pip
+
+    python3.6 -m venv --without-pip virtual
+    Step 3: Activate virtual environment
+
+    source virtual/bin/activate
+    install pip using curl
+
